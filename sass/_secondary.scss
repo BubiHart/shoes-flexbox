@@ -12,8 +12,8 @@
 }
 @mixin wrapper {
     width: 1000px;
-    margin: 0 auto;
     height: 100%;
+    margin: 0 auto;
 }
 @mixin pure_section {
     width: 100%;
@@ -26,3 +26,4 @@ $white: #fff;
 $grid1: green;
 $grid2: red;
 $grid3: yellow;
+$grid4: blue;

@@ -1,21 +1,85 @@
-header{
-  @include pure_section;
-  height: 45px;
-  background-color: $prevailing;
+header {
+    @include pure_section;
+    height: 45px;
+    background-color: $prevailing;
 }
-.header-wrapper{
-  @include flex;
+
+.header-wrapper {
+    @include flex;
+    @include wrapper;
+    background-color: $grid1;
+}
+
+.header-wrapper__logo {
+    width: 165px;
+    height: 100%;
+    margin-left: 10px;
+    background-color: $grid2;
+}
+
+.header-wrapper__search-icon {
+    height: 16px;
+    width: 16px;
+    margin-left: 605px;
+    margin-top: 14px;
+    background-color: $grid2;
+}
+
+.header-wrapper__login-register {
+    width: 140px;
+    height: 45px;
+    background-color: $grid2;
+    margin: 0 10px 0 23px;
+}
+
+.menu {
+    @include pure_section;
+    background-color: $grid1;
+    height: 60px;
+}
+
+.menu-wrapper {
+    @include wrapper;
+    @include flex;
+    background-color: $grid3;
+}
+
+.menu-wrapper__main-nav {
+    height: 100%;
+    width: 558px;
+    margin-left: 17px;
+    background-color: $grid4;
+}
+
+.menu-wrapper__wishlist-counter {
+    width: 182px;
+    height: 100%;
+    background-color: $grid4;
+    margin-left: auto;
+    margin-right: 41px;
+}
+.top{
+  @include pure_section;
+  background-color: $grid2;
+  height: 460px;
+}
+.top-wrapper{
   @include wrapper;
+  @include flex;
   background-color: $grid1;
 }
-.header-wrapper__logo{
-  width: 165px;
-  height: 100%;
-  margin-left: 10px;
+.top-wrapper__price-div{
+  width: 68px;
+  height: 67px;
   background-color: $grid2;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.header-wrapper__search-icon{
-  height: 16px;
-  width: 16px;
-  margin-left: 607px;
+.top-wrapper__item-title{
+  width: 282px;
+  height: 74px;
+  margin-top: 154px;
+  margin-right: 200px;
+  background-color: $grid2;
 }

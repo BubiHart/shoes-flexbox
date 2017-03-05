@@ -553,16 +553,16 @@ header {
   background-color: #242424;
 }
 
-/* line 6, ../sass/_main.scss */
+/* line 7, ../sass/_main.scss */
 .header-wrapper {
   display: flex;
   width: 1000px;
-  margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
   background-color: green;
 }
 
-/* line 11, ../sass/_main.scss */
+/* line 13, ../sass/_main.scss */
 .header-wrapper__logo {
   width: 165px;
   height: 100%;
@@ -570,9 +570,87 @@ header {
   background-color: red;
 }
 
-/* line 17, ../sass/_main.scss */
+/* line 20, ../sass/_main.scss */
 .header-wrapper__search-icon {
   height: 16px;
   width: 16px;
-  margin-left: 607px;
+  margin-left: 605px;
+  margin-top: 14px;
+  background-color: red;
+}
+
+/* line 28, ../sass/_main.scss */
+.header-wrapper__login-register {
+  width: 140px;
+  height: 45px;
+  background-color: red;
+  margin: 0 10px 0 23px;
+}
+
+/* line 35, ../sass/_main.scss */
+.menu {
+  width: 100%;
+  background-color: green;
+  height: 60px;
+}
+
+/* line 41, ../sass/_main.scss */
+.menu-wrapper {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: yellow;
+}
+
+/* line 47, ../sass/_main.scss */
+.menu-wrapper__main-nav {
+  height: 100%;
+  width: 558px;
+  margin-left: 17px;
+  background-color: blue;
+}
+
+/* line 54, ../sass/_main.scss */
+.menu-wrapper__wishlist-counter {
+  width: 182px;
+  height: 100%;
+  background-color: blue;
+  margin-left: auto;
+  margin-right: 41px;
+}
+
+/* line 61, ../sass/_main.scss */
+.top {
+  width: 100%;
+  background-color: red;
+  height: 460px;
+}
+
+/* line 66, ../sass/_main.scss */
+.top-wrapper {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: green;
+}
+
+/* line 71, ../sass/_main.scss */
+.top-wrapper__price-div {
+  width: 68px;
+  height: 67px;
+  background-color: red;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 79, ../sass/_main.scss */
+.top-wrapper__item-title {
+  width: 282px;
+  height: 74px;
+  margin-top: 154px;
+  margin-right: 200px;
+  background-color: red;
 }
