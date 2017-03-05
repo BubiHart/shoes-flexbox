@@ -1,0 +1,23 @@
+@mixin Main_font {
+    font-family: Aller, Arial, serif;
+}
+@mixin no-repeat {
+    background-repeat: no-repeat;
+}
+@mixin flex {
+    display: flex;
+}
+@mixin inline_block {
+    display: inline-block;
+}
+@mixin wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+@mixin pure_section {
+    width: 100%;
+}
+$logo_color: #57c5a0;
+$prevailing: #242424;
+$light_dark: #2e2e2e;
+$white: #fff;
