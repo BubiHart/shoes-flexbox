@@ -7,7 +7,7 @@ header {
 .header-wrapper {
     @include flex;
     @include wrapper;
-    background-color: $grid1;
+    background-color: $prevailing;
 }
 
 .header-wrapper__logo {
@@ -16,7 +16,6 @@ header {
     padding-top: 10px;
     padding-left: 8px;
     margin-left: 10px;
-    background-color: $grid2;
     font-size: 26px;
     font-weight: 500;
     font-style: normal;
@@ -28,20 +27,40 @@ header {
 }
 
 .header-wrapper__search-icon {
+    background-image: url("../img/search_icon.png");
+    background-repeat: no-repeat;
     height: 16px;
     width: 16px;
-    margin-left: 605px;
+    margin-left: 606px;
     margin-top: 14px;
-    background-color: $grid2;
 }
 
 .header-wrapper__login-register {
-    width: 140px;
+  min-width: 140px;
+  width: auto;
     height: 45px;
-    background-color: $grid2;
     margin: 0 10px 0 23px;
 }
-
+.header-wrapper__login-register ul{
+  @include main_font;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.27;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7e7e7e;
+  margin-left: -3px;
+  margin-top: 10px;
+}
+.header-wrapper__login-register ul a{
+  &:link, &:visited{
+    color: #7e7e7e;
+    text-decoration: none;
+    cursor: auto;
+  }
+}
 .menu {
     @include pure_section;
     background-color: $grid1;
