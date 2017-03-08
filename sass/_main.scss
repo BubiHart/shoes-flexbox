@@ -36,58 +36,177 @@ header {
 }
 
 .header-wrapper__login-register {
-  min-width: 140px;
-  width: auto;
+    min-width: 140px;
+    width: auto;
     height: 45px;
     margin: 0 10px 0 23px;
+    box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.35), inset 1px 0 0 0 rgba(255, 255, 255, 0.35);
 }
-.header-wrapper__login-register ul{
-  @include main_font;
-  font-size: 11px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.27;
-  letter-spacing: normal;
-  text-align: center;
-  color: #7e7e7e;
-  margin-left: -3px;
-  margin-top: 10px;
-}
-.header-wrapper__login-register ul a{
-  &:link, &:visited{
+
+.header-wrapper__login-register ul {
+    @include main_font;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.27;
+    letter-spacing: normal;
+    text-align: center;
     color: #7e7e7e;
-    text-decoration: none;
-    cursor: auto;
-  }
+    margin-left: -3px;
+    margin-top: 10px;
 }
+
+.header-wrapper__login-register ul a {
+    &:link,
+    &:visited {
+        color: #7e7e7e;
+        text-decoration: none;
+        cursor: auto;
+    }
+
+    &:hover {
+        color: #57c5a0;
+    }
+}
+
 .menu {
     @include pure_section;
-    background-color: $grid1;
+    background-color: #fff;
     height: 60px;
 }
 
 .menu-wrapper {
     @include wrapper;
     @include flex;
-    background-color: $grid3;
+    background-color: #fff;
 }
 
 .menu-wrapper__main-nav {
+    min-width: 558px;
+    width: auto;
     height: 100%;
-    width: 558px;
     margin-left: 17px;
-    background-color: $grid4;
+    background-color: $white;
 }
 
+.menu-wrapper__main-nav ul a {
+    @include main_font;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.8;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #242424;
+    margin: 0 18.5px;
+    padding-top: 24px;
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    &:first-child {
+        @include main_font;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 3.8;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #242424;
+        margin: 0 24px;
+        padding-top: 24px;
+    }
+
+    &:hover {
+        color: #57c5a0;
+    }
+}
+/*WISHLIST/CART COUNTER*/
 .menu-wrapper__wishlist-counter {
+    @include flex;
     width: 182px;
     height: 100%;
-    background-color: $grid4;
+    background-color: #fff;
     margin-left: auto;
     margin-right: 41px;
+    /*box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2), inset 1px 0 0 0 rgba(0, 0, 0, 0.2);*/
+    /*box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);*/
 }
 
+.menu-wrapper__wishlist-counter__wishlist {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.menu-wrapper__wishlist-counter__wishlist-icon {
+    background-image: url("../img/star_icon.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 23px;
+    margin-top: 23px;
+}
+
+.menu-wrapper__wishlist-counter__wishlist-counter {
+    height: 17px;
+    max-width: 17px;
+    border-radius: 4px;
+    background-color: #adadad;
+    margin-left: 47px;
+    margin-top: -18px;
+    margin-bottom: -18px;
+    @include main_font;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    *line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-right: 1px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.menu-wrapper__wishlist-counter__cart {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    /*box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.menu-wrapper__wishlist-counter__cart-icon {
+    background-image: url("../img/cart_icon.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 22px;
+    margin-top: 25px;
+}
+
+.menu-wrapper__wishlist-counter__cart-counter {
+    max-height: 16px;
+    max-width: 15px;
+    border-radius: 4px;
+    background-color: #57c5a0;
+    margin-left: 46px;
+    margin-top: -20px;
+    margin-bottom: -18px;
+    @include main_font;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.98;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    padding-bottom: 3px;
+    padding-left: 6px;
+}
+/*END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .top {
     @include pure_section;
     background-color: $grid2;
@@ -432,27 +551,30 @@ header {
     margin-left: 398px;
 }
 
-footer{
-  @include pure_section;
-  height: 90px;
-  background-color: $grid3;
+footer {
+    @include pure_section;
+    height: 90px;
+    background-color: $grid3;
 }
-.footer-wrapper{
-  @include wrapper;
-  @include flex;
-  background-color: $grid4;
+
+.footer-wrapper {
+    @include wrapper;
+    @include flex;
+    background-color: $grid4;
 }
-.footer-wrapper__copyright{
-  width: 185px;
-  height: 30px;
-  background-color: $grid2;
-  margin-top: 29px;
-  margin-left: 10px;
+
+.footer-wrapper__copyright {
+    width: 185px;
+    height: 30px;
+    background-color: $grid2;
+    margin-top: 29px;
+    margin-left: 10px;
 }
-.footer-wrapper__additional-nav{
-  width: 332px;
-  height: 12px;
-  background-color: $grid2;
-  margin-top: 40px;
-  margin-left: 430px;
+
+.footer-wrapper__additional-nav {
+    width: 332px;
+    height: 12px;
+    background-color: $grid2;
+    margin-top: 40px;
+    margin-left: 430px;
 }
