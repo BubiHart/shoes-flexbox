@@ -1,0 +1,4 @@
+https://github.com/BubiHart/shoes-flexbox.git
+Grid part 1 6.03.2017 00:46:10
+End grid 08.03.2017 02:28:00
+!Making grid takes 02:28:00
