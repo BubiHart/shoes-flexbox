@@ -209,7 +209,7 @@ header {
 /*END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .top {
     @include pure_section;
-    background-color: $grid2;
+    background-color: #eeede9;
     height: 460px;
 }
 
@@ -217,39 +217,106 @@ header {
     @include wrapper;
     @include flex;
     flex-direction: column;
-    background-color: $grid1;
+    background-color: #eeede9;
+    background-image: url("../img/test.png");
+    background-repeat: no-repeat;
 }
 
 .top-wrapper__price-div {
+    @include flex;
     width: 68px;
     height: 67px;
-    background-color: $grid2;
+    background-color: $logo_color;
     margin-top: 70px;
     margin-left: 530px;
 }
 
+.top-wrapper__price-div div {
+    font-family: 'Aller';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    margin: auto;
+}
+
 .top-wrapper__item-title {
-    width: 282px;
-    height: 74px;
-    background-color: $grid2;
-    margin-left: 529px;
-    margin-top: 17px;
+    font-family: 'Aller';
+    font-size: 43px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 1.5;
+    text-align: left;
+    color: #242424;
+    margin-left: 525px;
+    margin-top: 12px;
 }
 
 .top-wrapper__item-description {
-    width: 384px;
-    height: 70px;
-    background-color: $grid2;
-    margin-left: 529px;
-    margin-top: 13px;
+    font-family: 'Aller';
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #242424;
+    margin-left: 528px;
+    margin-top: 4px;
 }
 
 .top-wrapper__item-action-menu {
-    width: 166px;
+    max-width: 180px;
+    width: auto;
     height: 40px;
-    background-color: $grid2;
+    /*background-color: $grid2;*/
     margin-left: 532px;
-    margin-top: 15px;
+    margin-top: 12px;
+}
+
+.top-wrapper__item-action-menu:first-child {
+    margin-left: 2px;
+}
+
+.top-wrapper__item-action-menu div {
+    display: inline-block;
+    margin-left: -3px;
+}
+
+.top-wrapper__item-action-menu-eye {
+    background-image: url("../img/action_eye.png");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    /*margin-left: 2px;*/
+}
+
+.top-wrapper__item-action-menu-star {
+    background-image: url("../img/action_wish.png");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.top-wrapper__item-action-menu-share {
+    background-image: url("../img/action_share.png");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.top-wrapper__item-action-menu-cart {
+    background-image: url("../img/action_cart.png");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
 }
 
 .slider {
@@ -261,13 +328,13 @@ header {
 .specials {
     @include pure_section;
     height: 230px;
-    background-color: $grid3;
+    background-color: $prevailing;
 }
 
 .specials-wrapper {
     @include wrapper;
     @include flex;
-    background-color: $grid4;
+    background-color: $prevailing;
 }
 
 .specials-wrapper__on-sale {
@@ -275,7 +342,35 @@ header {
     height: 180px;
     margin-left: 19px;
     margin-top: 25px;
-    background-color: $grid1;
+    background-image: url("../img/on_sale.png");
+    background-repeat: no-repeat;
+}
+
+.specials-wrapper__on-sale-title div {
+    font-family: Aller;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+
+.specials-wrapper__special-offers-title div {
+    font-family: Aller;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin: 0 auto;
 }
 
 .specials-wrapper__special-offers {
@@ -283,7 +378,8 @@ header {
     height: 180px;
     margin-left: 19px;
     margin-top: 25px;
-    background-color: $grid1;
+    background-image: url("../img/special_offers.png");
+    background-repeat: no-repeat;
 }
 
 .specials-wrapper__must-have {
@@ -291,7 +387,22 @@ header {
     height: 180px;
     margin-left: 19px;
     margin-top: 25px;
-    background-color: $grid1;
+    background-image: url("../img/must_have.png");
+    background-repeat: no-repeat;
+}
+
+.specials-wrapper__must-have-title div {
+    font-family: Aller;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin-left: 3px;
+    margin-top: 4px;
 }
 
 .specials-wrapper__on-sale-title {
@@ -304,6 +415,7 @@ header {
 }
 
 .specials-wrapper__special-offers-title {
+    @include flex;
     width: 230px;
     height: 60px;
     background-color: $prevailing;
@@ -340,19 +452,42 @@ header {
 }
 
 .new-arrivals-wrapper__top-bar__title {
-    width: 308px;
+    width: auto;
     height: 20px;
-    background-color: $grid2;
-    margin-top: 34px;
-    margin-left: 19px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: Aller;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #242424;
 }
 
 .new-arrivals-wrapper__top-bar__show-all {
-    width: 100px;
-    height: 30px;
-    background-color: $grid2;
+    width: 95px;
+    height: 28px;
+    background-color: #ebe7df;
+    border: solid 1px  #bcb5a7;
     margin-top: 30px;
-    margin-left: 532px;
+    margin-left: 560px;
+}
+
+.new-arrivals-wrapper__top-bar__show-all div {
+    font-family: Aller;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #bcb5a7;
+    margin-top: 3px;
+    margin-left: -2px;
 }
 
 .new-arrivals-wrapper__item-bar {
@@ -365,11 +500,36 @@ header {
 .new-arrivals-wrapper__item-bar__item1 {
     width: 300px;
     height: 270px;
-    background-color: $grid2;
+    background-image: url("../img/item-1.png");
+    background-repeat: no-repeat;
+    background-color: $white;
     margin-top: 55px;
     margin-left: -940px;
 }
+.new-arrivals-wrapper__item-bar__item1__price-div{
+  /*
+      @include flex;
+      width: 68px;
+      height: 67px;
+      background-color: $logo_color;
 
+  }
+
+  .top-wrapper__price-div div {
+      font-family: 'Aller';
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.92;
+      letter-spacing: normal;
+      text-align: left;
+      color: $white;
+      margin: auto;
+  }
+
+  */
+}
 .new-arrivals-wrapper__item-bar__item2 {
     width: 300px;
     height: 270px;
