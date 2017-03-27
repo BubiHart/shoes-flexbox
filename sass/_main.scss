@@ -471,7 +471,7 @@ header {
     width: 95px;
     height: 28px;
     background-color: #ebe7df;
-    border: solid 1px  #bcb5a7;
+    border: solid 1px #bcb5a7;
     margin-top: 30px;
     margin-left: 560px;
 }
@@ -496,8 +496,9 @@ header {
     height: auto;
     margin-top: 33px;
 }
-
+/****/
 .new-arrivals-wrapper__item-bar__item1 {
+    @include flex;
     width: 300px;
     height: 270px;
     background-image: url("../img/item-1.png");
@@ -506,44 +507,157 @@ header {
     margin-top: 55px;
     margin-left: -940px;
 }
-.new-arrivals-wrapper__item-bar__item1__price-div{
-  /*
-      @include flex;
-      width: 68px;
-      height: 67px;
-      background-color: $logo_color;
 
-  }
-
-  .top-wrapper__price-div div {
-      font-family: 'Aller';
-      font-size: 16px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.92;
-      letter-spacing: normal;
-      text-align: left;
-      color: $white;
-      margin: auto;
-  }
-
-  */
+.new-arrivals-wrapper__item-bar__item1__price-div {
+    @include flex;
+    width: 68px;
+    height: 67px;
+    background-color: $logo_color;
+    margin-left: 12px;
+    margin-top: 203px;
 }
+
+.new-arrivals-wrapper__item-bar__item1__price-div div {
+    font-family: 'Aller';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    margin: auto;
+}
+
+.new-arrivals-wrapper__item-bar__item1-title {
+    font-family: Aller;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #242424;
+    margin-left: 13px;
+    margin-top: 230px;
+}
+/****/
 .new-arrivals-wrapper__item-bar__item2 {
+    @include flex;
     width: 300px;
     height: 270px;
-    background-color: $grid2;
+    margin-top: 55px;
+    margin-left: 20px;
+    background-image: url("../img/item-2.png");
+    background-repeat: no-repeat;
+    background-color: $white;
+}
+
+.new-arrivals-wrapper__item-bar__item2__price-div {
+    @include flex;
+    width: 68px;
+    height: 67px;
+    background-color: $logo_color;
+    margin-left: 12px;
+    margin-top: 203px;
+}
+
+.new-arrivals-wrapper__item-bar__item2__price-div div {
+    font-family: 'Aller';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    margin: auto;
+}
+
+.new-arrivals-wrapper__item-bar__item2-title {
+    font-family: Aller;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #242424;
+    margin-left: 13px;
+    margin-top: 230px;
+}
+
+.new-arrivals-wrapper__item-bar__item2__status {
+    @include flex;
+    width: 68px;
+    height: 67px;
+    background-color: #242424;
+    margin-left: 43px;
+}
+
+.new-arrivals-wrapper__item-bar__item2__status div {
+    font-family: Aller;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: auto;
+}
+/****/
+.new-arrivals-wrapper__item-bar__item3 {
+    @include flex;
+    width: 300px;
+    height: 270px;
+    background-image: url("../img/item-3.png");
+    background-repeat: no-repeat;
+    background-color: $white;
     margin-top: 55px;
     margin-left: 20px;
 }
 
-.new-arrivals-wrapper__item-bar__item3 {
-    width: 300px;
-    height: 270px;
-    background-color: $grid2;
-    margin-top: 55px;
-    margin-left: 20px;
+.new-arrivals-wrapper__item-bar__item3__price-div {
+    @include flex;
+    width: 68px;
+    height: 67px;
+    background-color: $logo_color;
+    margin-left: 12px;
+    margin-top: 203px;
+}
+
+.new-arrivals-wrapper__item-bar__item3__price-div div {
+    font-family: 'Aller';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    margin: auto;
+}
+
+.new-arrivals-wrapper__item-bar__item3-title {
+    font-family: Aller;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #242424;
+    margin-left: 13px;
+    margin-top: 230px;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .best-sellers {
